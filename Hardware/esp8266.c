@@ -15,7 +15,7 @@
 //C库
 #include <string.h>
 #include <stdio.h>
-#include <stdlib.h> //用于atoll
+#include <stdlib.h> 
 
 
 #define ESP8266_WIFI_INFO		"AT+CWJAP=\"name\",\"password\"\r\n"//wifi的账号和密码
@@ -151,7 +151,6 @@ void ESP8266_SendData(unsigned char *data, unsigned short len)
 
 
 
-// 修改 esp8266.c 中的 ESP8266_Sync_To_DS1302 函数,by deepseek
 _Bool ESP8266_Sync_To_DS1302(void)
 {
     UsartPrintf(USART_DEBUG, "[Sync] Start sync time to DS1302...\r\n");
